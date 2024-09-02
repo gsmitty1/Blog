@@ -1,0 +1,102 @@
+.container{
+  /* Step 1: Set display to grid */
+    display:grid;
+ /* Step 2: setup rows amd columns */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 350px 100px 50px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "feat feat feat feat feat feat feat feat"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    border: 2px solid yellow;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+    body {
+      background-color: rgb(120, 123, 123);
+    }
+    
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+          li {
+            display: inline;
+          }
+          ul {
+      background-color: #817b7bb2;
+    }
+    blockquote {
+      margin-left: 0;
+    }
+
+.box{
+    
+  width: 100%;
+  border: 2px solid rgb(133, 132, 132);
+  background: #e9b61c;
+  }
+
+.header{
+    grid-area:hd;
+    height: 20px;
+}
+
+.footer{
+  grid-area: ft;  
+}
+.feature{
+  grid-area: feat;
+  background: top left / contain url("https://wallpapers.com/images/featured-full/pittsburgh-steelers-pictures-412844wzb244iote.jpg");
+  background-size: 200px, 200px;
+  background-repeat: no-repeat no-repeat;
+ color: #b2960a;
+}
+.content{
+  grid-area: main;
+ 
+}
+.flex-container {
+  display: flex;
+  width: 600px;
+  background-color: rgb(234, 199, 24);
+}
+
+.flex-container > div {
+  background-color: #b2960a;
+  width: 200px;
+  line-height: 25px;
+  margin: 2px;
+  padding: 5px;
+  font-size: 30px;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #eae730;
+  background-color: #050505;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #8de24c;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #0e0e0b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
